@@ -7,6 +7,7 @@ import { Compliance } from './pages/Compliance';
 import {Analytics} from './pages/Analytics';
 import { Maintanance } from './pages/Maintanance';
 import { StatusView } from './components/maintenance components/StatusView';
+import { Home } from './pages/Home';
 
 function App() {
   return (
@@ -14,13 +15,14 @@ function App() {
       <Routes>
         {/* Everything inside this Route will use the Layout component */}
         <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
+          <Route index element={<Home />} />
           <Route path="assets" element={<Assets />} />
+          <Route path="dashboard" element={<Dashboard />} />
           <Route path="production" element={<Production />} />
           <Route path="maintanance" element={<Maintanance />} />
           <Route path="/maintenance/status" element={<StatusView />} />
           <Route path="compliance" element={<Compliance />} />
-          <Route path="analytics" element={<Analytics />} />
+          {/* <Route path="analytics" element={<Analytics />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

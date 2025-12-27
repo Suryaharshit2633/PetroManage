@@ -1,13 +1,12 @@
 
 import { Activity, TrendingUp, AlertTriangle, Wrench, BarChart3, Calendar } from 'lucide-react';
-import MetricsCard from '../components/dashboard components/MetricsCard';
-import ProductionChart from '../components/dashboard components/ProductionChart';
+import MetricsCard from './MetricsCard';
+import ProductionChart from './ProductionChart';
 // @ts-ignore: importing a JS module without a declaration file
-import AssetUtilization from '../components/dashboard components/AssetUtilization';
-import MaintenancePredictor from '../components/dashboard components/MaintenancePredictor';
-import RecentReports from '../components/dashboard components/RecentReports';
-
-import { analyticsData } from '../components/dashboard components/data';
+import AssetUtilization from './AssetUtilization';
+import MaintenancePredictor from './MaintenancePredictor';
+import RecentReports from './RecentReports';
+import { analyticsData } from '../data/dummyData';
 import { NavLink } from 'react-router-dom';
 
 
@@ -114,4 +113,5 @@ export function Dashboard() {
   );
 }
 
-// export default Dashboard;
+export default Dashboard;
+``

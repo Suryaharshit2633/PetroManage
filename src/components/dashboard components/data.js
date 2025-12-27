@@ -1,0 +1,127 @@
+
+export const analyticsData = {
+  currentMetrics: {
+    productionEfficiency: 87.5,
+    efficiencyChange: 5.2,
+    assetUtilization: 78.3,
+    utilizationChange: 3.1,
+    totalDowntime: 12.4,
+    downtimeChange: -8.5,
+    maintenanceDue: 3,
+  },
+
+  downtimeBreakdown: [
+    { name: 'Equipment Failure', value: 35, hours: 4.3 },
+    { name: 'Maintenance', value: 28, hours: 3.5 },
+    { name: 'Setup & Changeover', value: 20, hours: 2.5 },
+    { name: 'Material Shortage', value: 12, hours: 1.5 },
+    { name: 'Other', value: 5, hours: 0.6 },
+  ],
+
+  efficiencyComparison: [
+    { name: 'Assembly', efficiency: 89, target: 90 },
+    { name: 'Packaging', efficiency: 85, target: 88 },
+    { name: 'Quality Control', efficiency: 92, target: 95 },
+    { name: 'Shipping', efficiency: 81, target: 85 },
+    { name: 'Welding', efficiency: 87, target: 90 },
+  ],
+
+  productionTrends: [
+    { date: '2024-11-20', efficiency: 82, downtime: 8 },
+    { date: '2024-11-21', efficiency: 85, downtime: 6 },
+    { date: '2024-11-22', efficiency: 83, downtime: 7 },
+    { date: '2024-11-23', efficiency: 88, downtime: 5 },
+    { date: '2024-11-24', efficiency: 86, downtime: 6 },
+    { date: '2024-11-25', efficiency: 90, downtime: 4 },
+    { date: '2024-11-26', efficiency: 87, downtime: 5 },
+    { date: '2024-11-27', efficiency: 85, downtime: 7 },
+    { date: '2024-11-28', efficiency: 89, downtime: 4 },
+    { date: '2024-11-29', efficiency: 91, downtime: 3 },
+    { date: '2024-11-30', efficiency: 88, downtime: 5 },
+    { date: '2024-12-01', efficiency: 86, downtime: 6 },
+    { date: '2024-12-02', efficiency: 90, downtime: 4 },
+    { date: '2024-12-03', efficiency: 92, downtime: 3 },
+    { date: '2024-12-04', efficiency: 89, downtime: 4 },
+    { date: '2024-12-05', efficiency: 87, downtime: 6 },
+    { date: '2024-12-06', efficiency: 85, downtime: 7 },
+    { date: '2024-12-07', efficiency: 88, downtime: 5 },
+    { date: '2024-12-08', efficiency: 91, downtime: 3 },
+    { date: '2024-12-09', efficiency: 93, downtime: 2 },
+    { date: '2024-12-10', efficiency: 90, downtime: 4 },
+    { date: '2024-12-11', efficiency: 88, downtime: 5 },
+    { date: '2024-12-12', efficiency: 86, downtime: 6 },
+    { date: '2024-12-13', efficiency: 89, downtime: 4 },
+    { date: '2024-12-14', efficiency: 91, downtime: 3 },
+    { date: '2024-12-15', efficiency: 87, downtime: 5 },
+    { date: '2024-12-16', efficiency: 88, downtime: 5 },
+    { date: '2024-12-17', efficiency: 90, downtime: 4 },
+    { date: '2024-12-18', efficiency: 89, downtime: 4 },
+    { date: '2024-12-19', efficiency: 87, downtime: 5 },
+  ],
+
+  assets: [
+    { id: 'A001', name: 'CNC Machine Alpha', utilization: 92, status: 'operational' },
+    { id: 'A002', name: 'Assembly Line B', utilization: 85, status: 'operational' },
+    { id: 'A003', name: 'Packaging Unit 3', utilization: 68, status: 'maintenance' },
+    { id: 'A004', name: 'Quality Control Station', utilization: 78, status: 'operational' },
+    { id: 'A005', name: 'Robotic Welder', utilization: 45, status: 'idle' },
+  ],
+
+  maintenancePredictions: [
+    {
+      assetId: 'A003',
+      assetName: 'Packaging Unit 3',
+      predictedDate: '2024-12-22',
+      priority: 'high',
+      confidence: 94,
+    },
+    {
+      assetId: 'A001',
+      assetName: 'CNC Machine Alpha',
+      predictedDate: '2025-01-05',
+      priority: 'medium',
+      confidence: 87,
+    },
+    {
+      assetId: 'A002',
+      assetName: 'Assembly Line B',
+      predictedDate: '2025-01-15',
+      priority: 'low',
+      confidence: 79,
+    },
+    {
+      assetId: 'A004',
+      assetName: 'Quality Control Station',
+      predictedDate: '2025-01-20',
+      priority: 'low',
+      confidence: 82,
+    },
+  ],
+
+  recentReports: [
+    {
+      reportId: 'RPT-2024-1220',
+      productionEfficiency: 87.5,
+      downtime: 12.4,
+      generatedDate: '2024-12-20T08:30:00Z',
+    },
+    {
+      reportId: 'RPT-2024-1219',
+      productionEfficiency: 85.2,
+      downtime: 14.2,
+      generatedDate: '2024-12-19T08:30:00Z',
+    },
+    {
+      reportId: 'RPT-2024-1218',
+      productionEfficiency: 89.1,
+      downtime: 10.8,
+      generatedDate: '2024-12-18T08:30:00Z',
+    },
+    {
+      reportId: 'RPT-2024-1217',
+      productionEfficiency: 86.7,
+      downtime: 13.5,
+      generatedDate: '2024-12-17T08:30:00Z',
+    },
+  ],
+};

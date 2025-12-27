@@ -1,3 +1,4 @@
+
 import { NavLink, Outlet } from 'react-router-dom';
 import {
   LayoutDashboard,
@@ -10,20 +11,18 @@ import {
 
 export function Layout() {
   const navItems = [
-    { icon: <LayoutDashboard size={18} />, label: 'Dashboard', path: '/dashboard' },
+    { icon: <LayoutDashboard size={18} />, label: 'Dashboard', path: '/' },
     { icon: <Package size={18} />, label: 'Assets', path: '/assets' },
     { icon: <TrendingUp size={18} />, label: 'Production', path: '/production' },
     { icon: <Wrench size={18} />, label: 'Maintanance', path: '/maintanance' },
     { icon: <FileCheck size={18} />, label: 'Compliance', path: '/compliance' },
-    // { icon: <BarChart3 size={18} />, label: 'Analytics', path: '/analytics' }
+    { icon: <BarChart3 size={18} />, label: 'Analytics', path: '/analytics' }
   ];
 
   return (
     <div className="flex flex-col h-screen bg-gray-50 overflow-x-hidden">
-      
       <header className="bg-white border-b border-gray-200 shadow-sm w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          
           {/* LEFT SIDE: Logo Section */}
           <div className="shrink-0">
             <h1 className="text-xl md:text-2xl font-bold text-slate-800 leading-tight">PetroManage</h1>
@@ -57,7 +56,6 @@ export function Layout() {
               </div>
             </div>
           </div>
-
         </div>
       </header>
 
@@ -70,3 +68,6 @@ export function Layout() {
     </div>
   );
 }
+
+export default Layout;
+``
