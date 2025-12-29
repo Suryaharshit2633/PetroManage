@@ -24,6 +24,7 @@
     "react-select": "^5.10.2",
     "recharts": "^3.6.0",
     "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
